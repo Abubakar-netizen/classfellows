@@ -69,4 +69,9 @@ FounderOS is an **AI Chief of Staff** that sits inside your browser. It compress
 - **Design Excellence**: A custom-built, premium dark-mode UI designed to "WOW" judges at first glance.
 
 ---
+
+**Developers**
+
+Mubashra Afzal (23F-3078),Abu Bakar (23F-3003), Hafiz Rizwan (23F-3014)
+
 **Developed with ❤️ for the Hackathon.**
