@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FounderOS Popup</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <div class="logo-row">
+        <div class="logo-icon">⚡</div>
+        <span class="logo-text">FounderOS</span>
+      </div>
+      <div class="header-actions">
+        <button id="btn-settings" title="API Settings" class="icon-btn">⚙️</button>
+        <div class="status-badge">
+          <div class="status-dot-green"></div>
+          <span>AI Active</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Settings Panel (Hidden by default) -->
+    <div id="settings-panel" class="section hidden">
+      <div class="section-header">
+        <span class="section-icon">🔑</span>
+        <h2 class="section-title">API Configuration</h2>
+      </div>
+      <div class="settings-content">
+        <input type="password" id="api-key-input" placeholder="Paste Gemini or OpenAI Key">
+        <button id="btn-save-key" class="action-btn primary">Save Key</button>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <section class="section">
+        <div class="section-header">
+          <span class="section-icon">🔍</span>
+          <h2 class="section-title">Page Context</h2>
+        </div>
+        <div id="page-context" class="context-card">
+          <div class="context-detecting">Analyzing current page...</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-icon">✨</span>
+          <h2 class="section-title">AI Summary</h2>
+        </div>
+        <div id="ai-summary" class="ai-summary-card">
+          <div class="loading-animation">Scanning page structure...</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-icon">🎯</span>
+          <h2 class="section-title">Action Items</h2>
+        </div>
+        <div class="action-list">
+          <div class="action-item">
+            <div class="action-dot urgent"></div>
+            <span>Send Q1 MRR breakdown to Sequoia</span>
+          </div>
+          <div class="action-item">
+            <div class="action-dot high"></div>
+            <span>Fix ClientFlow API 504 errors</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="quick-actions">
+          <button id="btn-draft" class="action-btn primary">✍️ Draft Reply</button>
+          <button id="btn-save" class="action-btn secondary">🧠 Save to Brain</button>
+          <button id="btn-deadline" class="action-btn secondary">⏰ Add Deadline</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="ask-section">
+      <div class="ask-input-wrapper">
+        <span class="ask-icon">🪄</span>
+        <input type="text" id="ask-input" placeholder="Ask FounderOS anything...">
+        <button id="ask-btn" class="ask-btn">→</button>
+      </div>
+      <div id="ask-response" class="ask-response hidden"></div>
+    </div>
+
+    <footer class="popup-footer">
+      <a href="#" id="open-dashboard">Open Full Dashboard →</a>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
