@@ -21,12 +21,6 @@ Visit `http://localhost:3000`
 1. Go to `chrome://extensions/`
 2. Enable **Developer Mode**
 3. **Load unpacked** -> select `chrome-extension` folder
-
-### 3. Environment Variables
-Create a `.env.local`:
-```env
-AICC_API_KEY=sk-HR4otHoZQo69vTbx0kydG5zH4AuBymgC59CRZwQseSJmpCua
-AICC_BASE_URL=https://api.ai.cc/v1
 ```
 
 ## 📄 Documentation
